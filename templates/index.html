@@ -1,1 +1,58 @@
-<html><body><h1>Hello, Flask!</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOpinions - Your Blog Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Add additional CSS and meta tags for SEO if needed -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="{{ url_for('home') }}">DevOpinions</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('categories') }}">Categories</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Featured Post Section -->
+        <section class="featured-post">
+            <h1>Featured Post Title</h1>
+            <p>Author Name - Date</p>
+            <p>Featured post content goes here. This is a brief preview of the article.</p>
+            <a href="{{ url_for('article', article_id=1) }}">Read More</a>
+        </section>
+
+        <!-- Blog Post List Section -->
+        <section class="blog-posts">
+            <article class="blog-post">
+                <h2>Blog Post Title 1</h2>
+                <p>Author Name - Date</p>
+                <p>Blog post content goes here. This is a brief preview of the article.</p>
+                <a href="{{ url_for('article', article_id=2) }}">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <h2>Blog Post Title 2</h2>
+                <p>Author Name - Date</p>
+                <p>Blog post content goes here. This is a brief preview of the article.</p>
+                <a href="{{ url_for('article', article_id=3) }}">Read More</a>
+            </article>
+
+            <!-- Add more blog post articles as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 DevOpinions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
