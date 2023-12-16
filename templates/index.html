@@ -11,12 +11,11 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="{{ url_for('home') }}">DevOpinions</a>
+                <a href="{{ url_for('index') }}">DevOpinions</a>
             </div>
             <ul class="nav-links">
-                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About</a></li>
-                <li><a href="{{ url_for('categories') }}">Categories</a></li>
                 <li><a href="{{ url_for('contact') }}">Contact</a></li>
             </ul>
         </nav>
@@ -28,7 +27,7 @@
             <h1>Featured Post Title</h1>
             <p>Author Name - Date</p>
             <p>Featured post content goes here. This is a brief preview of the article.</p>
-            <a href="{{ url_for('article', article_id=1) }}">Read More</a>
+            <a href="{{ url_for('view_post', post_id=1) }}">Read More</a>
         </section>
 
         <!-- Blog Post List Section -->
@@ -37,14 +36,14 @@
                 <h2>Blog Post Title 1</h2>
                 <p>Author Name - Date</p>
                 <p>Blog post content goes here. This is a brief preview of the article.</p>
-                <a href="{{ url_for('article', article_id=2) }}">Read More</a>
+                <a href="{{ url_for('view_post', post_id=2) }}">Read More</a>
             </article>
 
             <article class="blog-post">
                 <h2>Blog Post Title 2</h2>
                 <p>Author Name - Date</p>
                 <p>Blog post content goes here. This is a brief preview of the article.</p>
-                <a href="{{ url_for('article', article_id=3) }}">Read More</a>
+                <a href="{{ url_for('view_post', post_id=3) }}">Read More</a>
             </article>
 
             <!-- Add more blog post articles as needed -->

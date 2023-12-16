@@ -1,0 +1,104 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Set background and text colors */
+body {
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+/* Header styles */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Bar styles */
+nav {
+    background-color: #3498db; /* Vibrant blue for the navbar */
+    color: #fff; /* White text in the navbar */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2980b9; /* Slightly darker blue on hover */
+}
+
+/* Featured Post Section styles */
+.featured-post {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.featured-post h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.featured-post p {
+    font-size: 18px;
+}
+
+/* Blog Post List Section styles */
+.blog-posts {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text in footer */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Primary button style */
+.button-primary {
+    background-color: #3498db; /* Vibrant blue */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+}
